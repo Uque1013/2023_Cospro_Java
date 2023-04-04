@@ -11,10 +11,11 @@ class Solution {
 		
 		return count;
 	}
-	
+		
 	public String func_b(int three, int five) {
 		if(three > five) return "three";
-		else return "five";
+		else if(three < five) return "five";
+		else return "same";
 	}
 	
 	public int func_c(int[] arr) {
@@ -24,7 +25,6 @@ class Solution {
 			if(arr[i] % 3 == 0)
 				count += 1;
 		}
-		
 		return count;
 	}
 	
