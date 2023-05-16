@@ -10,8 +10,8 @@ class Solution {
                 usedTv[j]++;
         
         for(int i = 0; i < 25; i++)
-            if(usedTv[i] >= 2)	// 2대 이상 트는 걸 알아야하기 때문에
-            // usedTv[i] >= 1에서 2로 바꿔준다.
+            if(usedTv[i] > 1)	// 2대 이상 트는 걸 알아야하기 때문에
+            // usedTv[i] >= 1에서 usedTv[i] > 1로 바꿔준다.
                 answer++;
         
         return answer;
